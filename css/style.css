@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #eee;
+}
+.container {
+    display:  flex;
+    max-width: 1157px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    margin-top: 37px;
+}
+.nav {
+    display:  flex;
+}
+.logo {
+    margin-top: 48px;
+}
+.nav__item {
+    list-style-type: none;
+    padding-right: 40px;
+}
+.nav__item > a, .header-basket > a {
+    padding: 5px;
+    text-decoration: none;
+    color:  #000;
+    font-family: Roboto;
+    font-weight: 500;
+}
+.header-basket {
+    margin-top: 37px;
+    background: url(../img/shape.png) left center no-repeat;
+}
+.basket-icon {
+    display: block;
+    margin-right: 25px;
+    float:  left;
+    width: 15px;
+    height: 11px;
+    
+}
