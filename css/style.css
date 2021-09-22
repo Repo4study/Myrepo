@@ -16,32 +16,34 @@ header {
 nav {
     margin-top: 37px;
 }
-.nav {
+.header__nav {
     display:  flex;
 }
-.logo {
+.header__logo {
     margin-top: 48px;
 }
 .nav__item {
     list-style-type: none;
     padding-right: 40px;
 }
-.nav__item > a, .header-basket > a {
+.nav__item > a, .header__basket > a {
     padding: 5px;
     text-decoration: none;
     color:  #000;
     font-family: Roboto;
     font-weight: 500;
 }
-.header-basket {
+.header__basket {
+    position: relative;
     margin-top: 37px;
     background: url(../img/shape.png) left center no-repeat;
 }
-.basket-icon {
-    display: block;
-    margin-right: 25px;
-    float:  left;
+.header__basket > a::before {
+    content: "";
+    position: absolute;
+    background: url(../img/Shape.svg) center center no-repeat;
     width: 15px;
-    height: 11px;
-    
+    height: 15px;
+    left: -27px;
+    top: 2px;
 }
