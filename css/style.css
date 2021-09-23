@@ -36,7 +36,6 @@ nav {
 .header__basket {
     position: relative;
     margin-top: 37px;
-    background: url(../img/shape.png) left center no-repeat;
 }
 .header__basket > a::before {
     content: "";
@@ -47,3 +46,110 @@ nav {
     left: -27px;
     top: 2px;
 }
+/*-------------------------slider--------------------------*/
+
+.slider {
+    position:relative;
+    width:1157px;
+    padding-top:370px;
+    text-align:center;
+    margin-bottom: 100px;
+    }
+.slider__check {
+    position:absolute;
+    clip:rect(0 0 0 0);
+    overflow:hidden;
+  }
+  
+.slider__div {
+        position:absolute;
+        top: -14px;
+        left: 597px;
+        }
+    
+.slider__label {
+        position: absolute;
+        overflow:hidden;
+        display:inline-block;
+        width:20px;
+        height:20px;
+        background:#069;
+        border-radius:50%;
+        text-indent:-9999px;
+        z-index: 1;
+        }
+
+/* Display */
+.slider__div {
+    display:none;
+    }
+.slider__check:checked + .slider__label + .slider__div {
+    display:block;
+    }
+
+/* Current */
+.slider__check:checked + .slider__label {
+    background:#C00;
+    }
+    /*-------------------------slider--------------------------*/
+.slider__check-pos-first {
+    left: 710px;
+    top: 320px;
+}
+.slider__check-pos-second {
+    left: 755px;
+    top: 320px;
+}
+.slider__check-pos-third {
+    left: 800px;
+    top: 320px;
+}
+.slider__label-pos-first {
+    left: 710px;
+    top: 320px;
+}
+.slider__label-pos-second {
+     left: 755px;
+    top: 320px;
+}
+.slider__label-pos-third {
+     left: 800px;
+    top: 320px;
+}
+
+.header__slider-description {
+    position: absolute;
+    top: 90px;
+    left: 178px;
+    text-align: left;
+}
+.header__slider-title {
+    font-size: 55px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 55px;
+}
+.header__slider-text {
+    margin: 25px 0 38px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    color: #283136;
+}
+.header__slider-button {
+    padding: 17px 54px 15px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Roboto;
+    background-color: #FB565A;
+    color: #fff;
+    border: none;
+}
+.header__slider-button:hover {
+    text-decoration: underline;
+    transition: .2s ease;
+    cursor: pointer;
+    background-color: #C61113;
+}
+
