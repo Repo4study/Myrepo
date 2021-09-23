@@ -53,7 +53,7 @@ nav {
     width:1157px;
     padding-top:370px;
     text-align:center;
-    margin-bottom: 100px;
+    padding-bottom: 48px;
     }
 .slider__check {
     position:absolute;
@@ -163,4 +163,177 @@ nav {
     cursor: pointer;
     background-color: #C61113;
 }
-
+/*----------------------Main---------------------*/
+.main {
+    margin-top: 80px;
+    font-family: Roboto;
+    text-align: left;
+    background-color: #fff;
+}
+.main__block {
+    margin-bottom: 80px;
+}
+.main__block-title {
+    margin: 25px auto 16px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.main__block-text,
+    .main__list-element {
+    font-size: 16px;
+    color: #283136;
+    line-height: 24px;
+}
+.order-button {
+    margin-top: 32px;
+    padding: 17px 40px 15px 39px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor:  pointer;
+}
+.main__button-red {
+    background-color: #FB565A;
+}
+.main__button-green {
+    background-color: #00CA74;
+}
+.main__button-yellow {
+    background-color: #EFC849;
+}
+.order-button:hover {
+    text-decoration: underline;
+    transition: .2s ease;
+}
+hr {
+    margin: 0 auto;
+    width: 77%;
+}
+.main__description-block {
+    padding-top:  73px;
+    text-align:  left;
+}
+.main__description-block, .aside {
+    margin-bottom: 75px;
+}
+.main__description-title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.main__description-block  h4, .aside h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+}
+.main__description-text {
+    margin: 32px auto 40px;
+}
+.main__services-list {
+    margin-top:  23px;
+}
+.main__list-element {
+    position: relative;
+    padding-left: 35px;
+    margin: 24px 0;
+    list-style-type: none;
+}
+.main__list-element::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 11px;
+    width: 25px;
+    height: 2px;
+    background: url(..img/Rectangle 12.png) center center no-repeat;
+    background-color: #FB565A;
+}
+.aside {
+    text-align: center;
+}
+.aside >.aside__stats {
+    float: left;
+    margin:  0 auto;
+    width: 33%;
+}
+.aside__stats > div {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.aside__stats > div > sup {
+    font-size: 26px;
+    line-height: 40px;
+}
+.aside h4 {
+    margin: 37px auto 31px;
+    text-align: center;
+}
+.aside__stats > p {
+    margin-top: 10px;
+    text-align-last: left;
+}
+.main__advertising-element {
+    margin: 46px auto 44px;
+}
+.first-gray-element::before {
+    content: "";
+    position: absolute;
+    top: 1663px;
+    left: 477px;
+    width: 2px;
+    height: 52px;
+    background-color: #EEEEEE;
+}
+.second-gray-element::before {
+    content: "";
+    position: absolute;
+    top: 1663px;
+    left: 784px;
+    width: 2px;
+    height: 52px;
+    background-color: #EEEEEE;
+}
+.third-gray-element::before {
+    content: "";
+    position: absolute;
+    top: 1663px;
+    left: 1066px;
+    width: 2px;
+    height: 52px;
+    background-color: #EEEEEE;
+}
+.section-on-tomorrow {
+    margin-top: 80px;
+    width: 100%;
+    height: 496px;
+    background-color: #333;
+}
+.footer__contact-block {
+    height: 300px;
+    width: 300px;
+}
+.vk-icon, .fb-icon, .insta-icon {
+    position: relative;;
+}
+.vk-icon {
+    width: 27px;
+    height: 15px;
+}
+.fb-icon {
+    width: 12px;
+    height: 22px;
+}
+.insta-icon {
+    width: 21px;
+    height: 21px;
+}
+.main > hr:nth-child(3) {
+    margin-top: 44px;
+}
