@@ -101,7 +101,6 @@ nav {
     left: 7px;
     top: 6px;
 }
-    }
     /*-------------------------slider--------------------------*/
 .slider__check-pos-first {
     left: 710px;
@@ -131,7 +130,7 @@ nav {
 .header__slider-description {
     position: absolute;
     top: 90px;
-    left: 178px;
+    left: -415px;
     text-align: left;
 }
 .header__slider-title {
@@ -315,25 +314,50 @@ hr {
     height: 496px;
     background-color: #333;
 }
+.footer-wrapper {
+    display:  flex;
+    max-width: 1157px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 .footer__contact-block {
-    height: 300px;
-    width: 300px;
+    margin: 68px 0;
 }
 .vk-icon, .fb-icon, .insta-icon {
-    position: relative;;
+    position: relative;
+    margin: 0 9px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #E1E1E1;
 }
 .vk-icon {
-    width: 27px;
-    height: 15px;
-}
+    padding: 30px 28px;
+
+ }   
 .fb-icon {
-    width: 12px;
-    height: 22px;
+    padding: 31px 34px 28px 35px;
 }
 .insta-icon {
-    width: 21px;
-    height: 21px;
+   padding: 30px;
 }
-.main > hr:nth-child(3) {
-    margin-top: 44px;
+.fb-icon:hover,
+.insta-icon:hover,
+ .vk-icon:hover {
+    transition: .3s ease;
+    background-color: #E74246;
+}
+
+.footer__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: Roboto;
+}
+.footer__text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Roboto;
+    font-weight: 400;
 }

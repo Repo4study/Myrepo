@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<title>Nerds</title>
 </head>
 <body>
@@ -32,7 +34,12 @@
 		</div>
 				<div class="slider">
 		<div class="container">
-			<div class="header__slider-description">
+			
+		<input class="slider__check slider__check-pos-first" type="radio" name="slider__check" id="slider__check-1" checked>
+    <label class="slider__label slider__label-pos-first" for="slider__check-1">1</label>
+    
+    <div class="slider__div">
+    	<div class="header__slider-description">
 				<h1 class="header__slider-title">
 					Долго, дорого,<br> скрупулезно.
 				</h1>
@@ -43,11 +50,6 @@
 					УЗНАТЬ БОЛЬШЕ
 				</button>
 			</div>
-			
-		<input class="slider__check slider__check-pos-first" type="radio" name="slider__check" id="slider__check-1" checked>
-    <label class="slider__label slider__label-pos-first" for="slider__check-1">1</label>
-    
-    <div class="slider__div">
     <img class="slider__image" src="img/nerds-index-slide1 1.png" alt="slider-image" width="760px" height="431px">
     </div>
     
@@ -55,6 +57,17 @@
     <label class="slider__label slider__label-pos-second" for="slider__check-2">2</label>
     
     <div class="slider__div">
+    	<div class="header__slider-description">
+				<h1 class="header__slider-title">
+					Любим математику <br> как никто другой.
+				</h1>
+				<p class="header__slider-text">
+					Никакого креатива, только математические формулы <br> для расчета идеальных пропорций
+				</p>
+				<button class="header__slider-button">
+					УЗНАТЬ БОЛЬШЕ
+				</button>
+			</div>
     <img src="img/index-slide-2.png" alt="slider-image" width="760px" height="431px" class="slider__image">
     </div>
     
@@ -62,7 +75,19 @@
     <label class="slider__label slider__label-pos-third" for="slider__check-3">3</label>
     
     <div class="slider__div">
-    <img class="slider__image" src="img/nerds-index-slide1 1.png" width="760px" height="431px" alt="slider-image">
+    	<div class="header__slider-description">
+				<h1 class="header__slider-title">
+					Только ночь,<br>только хардкор.
+				</h1>
+				<p class="header__slider-text">
+					Работать днем, как все? Мы против этого. <br>
+					Ближе к полуночи работа только начинается.
+				</p>
+				<button class="header__slider-button">
+					УЗНАТЬ БОЛЬШЕ
+				</button>
+			</div>
+    <img class="slider__image" src="img/index-slide-3.png" width="760px" height="431px" alt="slider-image">
     </div>
     	
 			
@@ -168,11 +193,11 @@
 		
 	</section>
 	<footer class="footer">
-		<div class="container">
+		<div class="footer-wrapper">
 			<div class="footer__contact-block">
-				<a href="#" class="vk-icon"></a>
-				<a href="#" class="fb-icon"></a>
-				<a href="#" class="insta-icon"></a>
+				<a href="#" class="vk-icon"><i class="fab fa-vk"></i></a>
+				<a href="#" class="fb-icon"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
 			</div>
 			<div class="footer__text-block">
 				<h3 class="footer__title">
