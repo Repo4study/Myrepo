@@ -46,6 +46,15 @@ nav {
     left: -27px;
     top: 2px;
 }
+.nav__item > a:hover,
+.header__basket > a:hover {
+    color: #FB565A;
+}
+.nav__item > a:active,
+.header__basket > a:active {
+    color: #000;
+    opacity: .4;
+} 
 /*-------------------------slider--------------------------*/
 
 .slider {
@@ -157,10 +166,14 @@ nav {
     border: none;
 }
 .header__slider-button:hover {
-    text-decoration: underline;
     transition: .2s ease;
     cursor: pointer;
-    background-color: #C61113;
+    background-color: #E74246;
+}
+.header__slider-button:active {
+    background-color: #D7373B;
+    opacity: .3;
+   /* box-shadow: inset 2px 3px 2px rgba(100, 0, 20, 1);*/
 }
 /*----------------------Main---------------------*/
 .main {
@@ -281,6 +294,16 @@ hr {
 .main__advertising-element {
     margin: 46px auto 44px;
 }
+.main__advertising-element > a {
+    opacity: .5;
+}
+.main__advertising-element > a:hover {
+    opacity: 1;
+    transition: .1s ease;
+}
+.main__advertising-element > a:active {
+    opacity: .5;
+}
 .first-gray-element::before {
     content: "";
     position: absolute;
@@ -332,7 +355,7 @@ hr {
     background-color: #E1E1E1;
 }
 .vk-icon {
-    padding: 30px 28px;
+    padding: 30px;
 
  }   
 .fb-icon {
