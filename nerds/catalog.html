@@ -38,7 +38,39 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		</header>
 			<main class="main">
 				<aside class="sidebar">
-					asdgfhersgf
+					<p>СТоимость:</p>
+					<div class="range-slider">
+						<input type="range" min="0" max="100" step="10">
+					</div>
+					<p>Сетка:</p>
+					<div class="sidebar-form">
+						<div class="radio-wrapper">
+							<input type="radio" id="adaptive">
+							<input type="radio" id="fixed">
+							<input type="radio" id="rubber">
+						</div>
+						<div class="label-wrapper">
+					<label for="adaptive">адаптивная</label>
+					<label for="fixed">фиксированная</label>
+					<label for="rubber">резиновая</label>
+					</div>
+					</div>
+					<p>Особенности:</p>
+					<div class="checkbox-form">
+						<div class="radio-wrapper">
+							<input type="checkbox" id="slider">
+							<input type="checkbox" id="advantage">
+							<input type="checkbox" id="news">
+							<input type="checkbox" id="galery">
+							<input type="checkbox" id="basket">
+						</div>
+						<div class="label-wrapper-square">
+					<label for="slider">слайдер</label>
+					<label for="advantage">Блок преимуществ</label>
+					<label for="news">новости</label>
+					<label for="galery">галерея</label>
+					<label for="basket">корзина</label>
+					</div>
 				</aside>
 				<div class="main-catalog">
 					<div class="main-catalog__header">
@@ -58,35 +90,97 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
+							<div class="catalog__element-shape"></div>
 							<img src="img/img-sedona 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
+							<div class="catalog__element-shape"></div>
 							<img src="img/img-pink 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
+							<div class="catalog__element-shape"></div>
 							<img src="img/img-barbershop 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
-							<img src="img/img-barbershop 1.jpg" width="358px" height="577px" alt="">
+							<div class="catalog__element-shape"></div>
+							<img src="img/img-mishka 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
+							<div class="catalog__element-shape"></div>
 							<img src="img/img-aplus 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
 					<div class="main-catalog__element">
 						<a href="">
+							<div class="catalog__element-shape"></div>
 							<img src="img/img-kvast 1.jpg" width="358px" height="577px" alt="">
 						</a>
+						<div class="catalog__element-price">
+							<h4>Sedona</h4>
+							<p>Информационный сайт <br> для туристов</p>
+							<button>9 900 ₽</button>
+						</div>
 					</div>
+					<ul class="next-page-list">
+						<li><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li class="next"><a href="" >следующая</a></li>
+					</ul>
 				</div>
 			</main>
+			<section class="section-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5082.019393221151!2d30.444442903069007!3d50.440920046555426!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1632475404308!5m2!1sru!2sua" width="100%" height="496" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+	<footer class="footer">
+		<div class="footer-wrapper">
+			<div class="footer__contact-block">
+				<a href="#" class="vk-icon"><i class="fab fa-vk"></i></a>
+				<a href="#" class="fb-icon"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div class="footer__text-block">
+				<h3 class="footer__title">
+					Давайте дружить, это выгодно!
+				</h3>
+				<p class="footer__text">
+					Скидка 10% для друзей из социальных сетей.
+				</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
