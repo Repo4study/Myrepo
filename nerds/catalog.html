@@ -38,39 +38,63 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		</header>
 			<main class="main">
 				<aside class="sidebar">
-					<p>СТоимость:</p>
+					<form action="" class="aside-form">
+					<p class="price-text">СТоимость:</p>
 					<div class="range-slider">
-						<input type="range" min="0" max="100" step="10">
-					</div>
-					<p>Сетка:</p>
-					<div class="sidebar-form">
-						<div class="radio-wrapper">
-							<input type="radio" id="adaptive">
-							<input type="radio" id="fixed">
-							<input type="radio" id="rubber">
+						<div class="slider__element-start">
+							<span></span>
 						</div>
-						<div class="label-wrapper">
-					<label for="adaptive">адаптивная</label>
-					<label for="fixed">фиксированная</label>
-					<label for="rubber">резиновая</label>
-					</div>
-					</div>
-					<p>Особенности:</p>
-					<div class="checkbox-form">
-						<div class="radio-wrapper">
-							<input type="checkbox" id="slider">
-							<input type="checkbox" id="advantage">
-							<input type="checkbox" id="news">
-							<input type="checkbox" id="galery">
-							<input type="checkbox" id="basket">
+						<div class="range"></div>
+						<div class="slider__element-end">
+							<span></span>
 						</div>
-						<div class="label-wrapper-square">
-					<label for="slider">слайдер</label>
-					<label for="advantage">Блок преимуществ</label>
-					<label for="news">новости</label>
-					<label for="galery">галерея</label>
-					<label for="basket">корзина</label>
 					</div>
+					<div class="calculate">
+						<span>от</span>
+						<div class="min">
+							<p>0</p>
+						</div>
+						<span>до</span>
+						<div class="max">
+							<p>15 000</p>
+						</div>
+					</div>
+						<p class="aside__form-text">Сетка:</p>
+						<fieldset>
+							<input class="radio__input" type="radio" id="adaptive">
+						<label for="adaptive" class="radio__label">адаптивная</label>
+						</fieldset>
+						<fieldset>
+							<input class="radio__input" type="radio" id="fixed">
+						<label for="fixed" class="radio__label">фиксированная</label>
+						</fieldset>
+						<fieldset>
+							<input class="radio__input" type="radio" id="gumm">
+						<label for="gumm" class="radio__label">резиновая</label>
+						</fieldset>		
+						<p class="aside__form-text">Особенности:</p>
+						<fieldset>
+							<input type="checkbox" id="slider" class="checkbox__input">
+						<label for="slider" class="checkbox__label">слайдер</label>
+						</fieldset>
+						<fieldset>
+							<input type="checkbox" id="advantage" class="checkbox__input">
+						<label for="advantage" class="checkbox__label">блок преимуществ</label>
+						</fieldset>
+						<fieldset>
+							<input type="checkbox" id="news" class="checkbox__input">
+						<label for="news" class="checkbox__label">новости</label>
+						</fieldset>
+						<fieldset>
+							<input type="checkbox" id="galery" class="checkbox__input">
+						<label for="galery" class="checkbox__label">галерея</label>
+						</fieldset>
+						<fieldset>
+							<input type="checkbox" id="basket" class="checkbox__input">
+						<label for="basket" class="checkbox__label">корзина</label>
+						</fieldset>
+						<a href="" class="form__button-show">ПОКАЗАТЬ</a>	
+					</form>
 				</aside>
 				<div class="main-catalog">
 					<div class="main-catalog__header">
@@ -185,15 +209,22 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						<li class="next"><a href="" >следующая</a></li>
 					</ul>
 				</div>
+				
 			</main>
 			<section class="section-map">
+				<div class="popup" id="popup">
+						<form action="">
+							<input type="text" id="send">
+							<label for="send">text</label>
+						</form>
+					</div>
 				<div class="map-contacts">
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 </p>
 					<a href="">
 						тел. +7 (812) 275-75-75
 					</a>
-					<button>Напишите нам</button>
+					<a href="#popup" class="button-send">Напишите нам</a>
 				</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5082.019393221151!2d30.444442903069007!3d50.440920046555426!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1632475404308!5m2!1sru!2sua" width="100%" height="496" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</section>
