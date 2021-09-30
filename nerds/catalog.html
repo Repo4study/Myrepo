@@ -18,13 +18,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<header class="header">
 		<div class="container">
 			<div class="header__logo">
-				<a href=""><img src="img/nerds-logo.svg" alt="Логотип" width="160px" height="65px"></a>
+				<a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип" width="160px" height="65px"></a>
 			</div>
 			<nav>
 				<ul class="header__nav">
-					<li class="nav__item"><a href="">Студия</a></li>
+					<li class="nav__item"><a href="index.html">Студия</a></li>
 					<li class="nav__item"><a href="">Клиенты</a></li>
-					<li class="nav__item"><a href="">Магазин</a></li>
+					<li class="nav__item"><a href="catalog.html" class="active">Магазин</a></li>
 					<li class="nav__item"><a href="">Контакты</a></li>
 				</ul>
 			</nav>
@@ -203,7 +203,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						</div>
 					</div>
 					<ul class="next-page-list">
-						<li><a href="">1</a></li>
+						<li><a href="" class="active-next-page">1</a></li>
 						<li><a href="">2</a></li>
 						<li><a href="">3</a></li>
 						<li class="next"><a href="" >следующая</a></li>
@@ -212,11 +212,27 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 				
 			</main>
 			<section class="section-map">
+				<input type="checkbox" class="popup-close-check" id="popup-close-check">
 				<div class="popup" id="popup">
+					<h3>Напишите нам</h3>
 						<form action="">
-							<input type="text" id="send">
-							<label for="send">text</label>
+							<fieldset class="popup__form-name">
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" placeholder="Имя Фамилия">
+							</fieldset>
+							<fieldset class="popup__form-email">
+							<label for="email">Ваш email</label>
+							<input type="text" id="email" placeholder="emain@example.com">
+							</fieldset>
+							<fieldset class="popup__form-letter">
+							<label for="letter">Текст письма</label>
+							<input type="text" id="letter" placeholder="В свободной форме">
+							</fieldset>	
+							<div>
+								<button>отправить</button>
+							</div>
 						</form>
+						<label for="popup-close-check" class="close"></label>
 					</div>
 				<div class="map-contacts">
 					<h3>NЁRDS DESIGN STUDIO</h3>

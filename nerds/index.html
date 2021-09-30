@@ -18,11 +18,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<header class="header">
 		<div class="container">
 			<div class="header__logo">
-				<a href=""><img src="img/nerds-logo.svg" alt="Логотип" width="160px" height="65px"></a>
+				<a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип" width="160px" height="65px"></a>
 			</div>
 			<nav>
 				<ul class="header__nav">
-					<li class="nav__item"><a href="">Студия</a></li>
+					<li class="nav__item"><a href="" class="active">Студия</a></li>
 					<li class="nav__item"><a href="">Клиенты</a></li>
 					<li class="nav__item"><a href="catalog.html">Магазин</a></li>
 					<li class="nav__item"><a href="">Контакты</a></li>
@@ -190,13 +190,35 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<hr>
 	</main>
 	<section class="section-map">
+		<input type="checkbox" class="popup-close-check" id="popup-close-check">
+				<div class="popup" id="popup">
+					<h3>Напишите нам</h3>
+						<form action="">
+							<fieldset class="popup__form-name">
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" placeholder="Имя Фамилия">
+							</fieldset>
+							<fieldset class="popup__form-email">
+							<label for="email">Ваш email</label>
+							<input type="text" id="email" placeholder="emain@example.com">
+							</fieldset>
+							<fieldset class="popup__form-letter">
+							<label for="letter">Текст письма</label>
+							<input type="text" id="letter" placeholder="В свободной форме">
+							</fieldset>	
+							<div>
+								<button>отправить</button>
+							</div>
+						</form>
+						<label for="popup-close-check" class="close"></label>
+					</div>
 		<div class="map-contacts">
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 </p>
 					<a href="">
 						тел. +7 (812) 275-75-75
 					</a>
-					<button>Напишите нам</button>
+					<a href="#popup" class="button-send">Напишите нам</a>
 				</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5082.019393221151!2d30.444442903069007!3d50.440920046555426!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1632475404308!5m2!1sru!2sua" width="100%" height="496" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</section>
