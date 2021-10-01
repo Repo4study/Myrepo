@@ -569,12 +569,6 @@ fieldset {
     top: 87px;
     display: none;
 }
-#popup-close-check:checked + .popup {
-    display: none;
-}
-#popup-close-check:checked + .close {
-    display: none;
-}
 a.button-send {
     display: inline-block;
     margin: 38px auto 47px;

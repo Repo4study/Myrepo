@@ -321,6 +321,7 @@ aside > form {
     appearance: none;
     opacity: .8;
 }
+
 .aside-form > fieldset > input:checked {
     opacity: 1;
 }
@@ -402,6 +403,9 @@ aside > form {
 
 .radio__input:checked + label:after {
     opacity: 1;
+}
+input.disabled + label {
+    opacity: .5;
 }
 .price-text {
     margin: 0 0 16px;
@@ -674,10 +678,3 @@ a.button-send {
     top: 87px;
     display: none;
 }
-#popup-close-check:checked + .popup {
-    display: none;
-}
-#popup-close-check:checked + .close {
-    display: none;
-}
-

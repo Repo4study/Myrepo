@@ -69,7 +69,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						<label for="fixed" class="radio__label">фиксированная</label>
 						</fieldset>
 						<fieldset>
-							<input class="radio__input" type="radio" name="makeup" id="gumm">
+							<input class="radio__input disabled" disabled type="radio" name="makeup" id="gumm">
 						<label for="gumm" class="radio__label">резиновая</label>
 						</fieldset>		
 						<p class="aside__form-text">Особенности:</p>
@@ -90,7 +90,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						<label for="galery" class="checkbox__label">галерея</label>
 						</fieldset>
 						<fieldset>
-							<input type="checkbox" name="advantage" id="basket" class="checkbox__input">
+							<input type="checkbox" name="advantage" disabled id="basket" class="checkbox__input disabled">
 						<label for="basket" class="checkbox__label">корзина</label>
 						</fieldset>
 						<a href="" class="form__button-show">ПОКАЗАТЬ</a>	
@@ -212,7 +212,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 				
 			</main>
 			<section class="section-map">
-				<input type="checkbox" class="popup-close-check" id="popup-close-check">
 				<div class="popup" id="popup">
 					<h3>Напишите нам</h3>
 						<form action="">
@@ -232,7 +231,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 								<button>отправить</button>
 							</div>
 						</form>
-						<label for="popup-close-check" class="close"></label>
+						<a href="#" class="close"></a>
 					</div>
 				<div class="map-contacts">
 					<h3>NЁRDS DESIGN STUDIO</h3>
@@ -261,16 +260,5 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 			</div>
 		</div>
 	</footer>
-	<script>
-		var inputs = document.getElementsByName("advantage");
-        for (var i = 0; i < inputs.length; i++)
-            inputs[i].onchange = checkboxHandler;
- 
-        function checkboxHandler(e) {
-            for (var i = 0; i < inputs.length; i++)
-                if (inputs[i].checked && inputs[i] !== this)
-                    inputs[i].checked = false;
-        }
-	</script>
 </body>
 </html>
