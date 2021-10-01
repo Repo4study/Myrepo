@@ -636,6 +636,9 @@ a.button-send {
     font-weight: 700;
     color: #000;
 }
+.popup input:invalid {
+    border-color: #E74246;
+}
 .popup > form > div {
     width: 960px;
     padding-left: 100px;
@@ -670,7 +673,11 @@ a.button-send {
     height: 20px;
     left: 835px;
     top: 78px;
-    z-index: 3
+    z-index: 3;
+    opacity: .7;
+}
+.close:hover {
+    opacity: 1;
 }
 .popup-close-check {
     position: absolute;
