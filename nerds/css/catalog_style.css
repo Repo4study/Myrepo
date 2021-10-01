@@ -319,13 +319,28 @@ aside > form {
 .aside-form > fieldset > input {
     position: absolute;
     appearance: none;
+    opacity: .8;
+}
+.aside-form > fieldset > input:checked {
+    opacity: 1;
+}
+.aside-form > fieldset > input:hover {
+    color: ;
 }
 .aside-form label {
     padding-left: 35px;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+    text-transform: capitalize;
     color: #283136;
+    opacity: .8;
+}
+.aside-form label:hover {
+    opacity: 1;
+}
+.aside-form label:hover + .checkbox__label:before {
+    opacity: 1;
 }
 .checkbox__label:before {
     content: "";
@@ -339,6 +354,7 @@ aside > form {
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: .8;
 }
 .checkbox__label:after {
     content: "";

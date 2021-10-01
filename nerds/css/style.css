@@ -323,6 +323,7 @@ hr {
     text-align-last: left;
 }
 .main__advertising-element {
+    position: relative;
     margin: 46px auto 44px;
 }
 .main__advertising-element > a {
@@ -338,8 +339,8 @@ hr {
 .first-gray-element::before {
     content: "";
     position: absolute;
-    top: 1663px;
-    left: 477px;
+    top: 16px;
+    left: -50px;
     width: 2px;
     height: 52px;
     background-color: #EEEEEE;
@@ -347,8 +348,8 @@ hr {
 .second-gray-element::before {
     content: "";
     position: absolute;
-    top: 1663px;
-    left: 784px;
+    top: 0;
+    left: -50px;
     width: 2px;
     height: 52px;
     background-color: #EEEEEE;
@@ -356,8 +357,8 @@ hr {
 .third-gray-element::before {
     content: "";
     position: absolute;
-    top: 1663px;
-    left: 1066px;
+    top: 16px;
+    left: -50px;
     width: 2px;
     height: 52px;
     background-color: #EEEEEE;

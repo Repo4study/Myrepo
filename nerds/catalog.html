@@ -61,36 +61,36 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					</div>
 						<p class="aside__form-text">Сетка:</p>
 						<fieldset>
-							<input class="radio__input" type="radio" id="adaptive">
+							<input class="radio__input" type="radio" name="makeup" id="adaptive">
 						<label for="adaptive" class="radio__label">адаптивная</label>
 						</fieldset>
 						<fieldset>
-							<input class="radio__input" type="radio" id="fixed">
+							<input class="radio__input" type="radio" name="makeup" id="fixed">
 						<label for="fixed" class="radio__label">фиксированная</label>
 						</fieldset>
 						<fieldset>
-							<input class="radio__input" type="radio" id="gumm">
+							<input class="radio__input" type="radio" name="makeup" id="gumm">
 						<label for="gumm" class="radio__label">резиновая</label>
 						</fieldset>		
 						<p class="aside__form-text">Особенности:</p>
 						<fieldset>
-							<input type="checkbox" id="slider" class="checkbox__input">
+							<input type="checkbox" name="advantage" id="slider" class="checkbox__input">
 						<label for="slider" class="checkbox__label">слайдер</label>
 						</fieldset>
 						<fieldset>
-							<input type="checkbox" id="advantage" class="checkbox__input">
+							<input type="checkbox" name="advantage" id="advantage" class="checkbox__input">
 						<label for="advantage" class="checkbox__label">блок преимуществ</label>
 						</fieldset>
 						<fieldset>
-							<input type="checkbox" id="news" class="checkbox__input">
+							<input type="checkbox" name="advantage" id="news" class="checkbox__input">
 						<label for="news" class="checkbox__label">новости</label>
 						</fieldset>
 						<fieldset>
-							<input type="checkbox" id="galery" class="checkbox__input">
+							<input type="checkbox" name="advantage" id="galery" class="checkbox__input">
 						<label for="galery" class="checkbox__label">галерея</label>
 						</fieldset>
 						<fieldset>
-							<input type="checkbox" id="basket" class="checkbox__input">
+							<input type="checkbox" name="advantage" id="basket" class="checkbox__input">
 						<label for="basket" class="checkbox__label">корзина</label>
 						</fieldset>
 						<a href="" class="form__button-show">ПОКАЗАТЬ</a>	
@@ -261,5 +261,16 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 			</div>
 		</div>
 	</footer>
+	<script>
+		var inputs = document.getElementsByName("advantage");
+        for (var i = 0; i < inputs.length; i++)
+            inputs[i].onchange = checkboxHandler;
+ 
+        function checkboxHandler(e) {
+            for (var i = 0; i < inputs.length; i++)
+                if (inputs[i].checked && inputs[i] !== this)
+                    inputs[i].checked = false;
+        }
+	</script>
 </body>
 </html>
